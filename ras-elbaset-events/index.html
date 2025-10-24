@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - دليل فعاليات رأس البسيط الساحلية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-bold" href="index.html">
+                    <i class="fas fa-ship me-2"></i> فعاليات رأس البسيط
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-sm btn-outline-warning text-dark fw-bold" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">استعراض الكل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">عن الدليل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <div class="form-check form-switch d-flex align-items-center mt-2 mt-lg-0 pt-1">
+                                <input class="form-check-input" type="checkbox" id="modeLangToggle" role="switch">
+                                <label class="form-check-label ms-2" for="modeLangToggle" id="toggleLabel">
+                                    <i class="fas fa-moon me-1"></i>/AR
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <section class="hero-section text-center py-5 bg-light-subtle">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold mb-3 text-primary">رأس البسيط: سحر الساحل والأنشطة البحرية</h1>
+                <p class="lead text-secondary">دليلك الشامل لأهم الأنشطة البحرية، والمهرجانات الصيفية، والفعاليات في رأس البسيط.</p>
+                <a href="events.html" class="btn btn-lg btn-warning text-dark mt-3 fw-bold">تصفح الفعاليات الآن <i class="fas fa-arrow-left me-1"></i></a>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4 pb-2 border-bottom border-warning">مهرجان الصيد السنوي برأس البسيط</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow-lg border-warning">
+                        <img src="img/event5.jpg" class="card-img-top" alt="مهرجان الصيد" style="max-height: 400px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">مسابقة الصيد الساحلية وعروض القوارب</h5>
+                            <p class="card-text">فعالية سنوية تعكس تراث الصيد البحري، تشمل مسابقات صيد، عروضاً للقوارب التقليدية، وأمسيات شعبية على شاطئ البحر.</p>
+                            <a href="event.html?id=1" class="btn btn-warning text-dark fw-bold">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 text-center">
+            <h2 class="mb-4 pb-2 border-bottom border-warning">اكتشف حسب التصنيف</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-category-pill"><i class="fas fa-water me-2"></i> أنشطة بحرية</button>
+                <button class="btn btn-category-pill"><i class="fas fa-fish me-2"></i> مأكولات بحرية</button>
+                <button class="btn btn-category-pill"><i class="fas fa-campground me-2"></i> تخييم</button>
+                <button class="btn btn-category-pill"><i class="fas fa-umbrella-beach me-2"></i> مهرجانات صيفية</button>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4 pb-2 border-bottom border-warning">فعاليات رأس البسيط قادمة</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 shadow border-success">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="img/event4.jpg" class="rounded-circle border border-5 border-success" alt="كرة طائرة شاطئية" style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold text-success mt-2">بطولة الكرة الطائرة الشاطئية</h5>
+                            <span class="badge bg-success mb-2">رياضة صيفية</span>
+                            <p class="card-text small text-muted">منافسات محلية ودولية على رمال شاطئ رأس البسيط.</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-2 text-success"></i> 20-25 نوفمبر</small>
+                            <a href="event.html?id=2" class="btn btn-sm btn-success float-end">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow border-info">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="img/event8.jpg" class="rounded-circle border border-5 border-info" alt="تصوير الغروب" style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold text-info mt-2">أمسيات تصوير الغروب</h5>
+                            <span class="badge bg-info mb-2">فنون بصرية</span>
+                            <p class="card-text small text-muted">ورش عمل لتصوير المناظر الطبيعية الساحلية عند غروب الشمس.</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-2 text-info"></i> كل جمعة من شهر نوفمبر</small>
+                            <a href="event.html?id=3" class="btn btn-sm btn-info text-dark float-end">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow border-warning">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="img/event14.jfif" class="rounded-circle border border-5 border-info" alt="ليالي الساحل" style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold text-warning mt-2">ليالي الساحل الموسيقية</h5>
+                            <span class="badge bg-warning text-dark mb-2">موسيقى عربية</span>
+                            <p class="card-text small text-muted">حفلات غنائية على الهواء الطلق بمشاركة فنانين محليين وعرب.</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-2 text-warning"></i> 15 نوفمبر</small>
+                            <a href="event.html?id=4" class="btn btn-sm btn-warning text-dark float-end">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-warning">فعاليات رأس البسيط</h5>
+                    <p class="small">بوابة لاستكشاف أجمل الفعاليات على الساحل السوري.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning">روابط سريعة</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-white-50">الرئيسية</a></li>
+                        <li><a href="events.html" class="text-white-50">استعراض الكل</a></li>
+                        <li><a href="about.html" class="text-white-50">عن الدليل</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning">تواصل معنا</h5>
+                    <p class="small">البريد الإلكتروني: info@ras-elbaset-events.com</p>
+                    <div class="social-links-custom">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-warning">
+            <div class="text-center small">
+                <p class="mb-0">© 2026 دليل فعاليات رأس البسيط. جميع الحقوق محفوظة.</p>
+                <p class="small mt-3">مشروع مقرر BWP401 | فريق العمل: [suhilah_269042 , fatima_220601 , einas_280417 , haya_265732 ,hadeel_221635]</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
