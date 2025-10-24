@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="eventsPageTitle">استعراض الكل - فعاليات رأس البسيط</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-bold" href="index.html">
+                    <i class="fas fa-ship me-2"></i> <span data-translate="footerTitle">فعاليات رأس البسيط</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-translate="home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-sm btn-outline-warning text-dark fw-bold" aria-current="page" href="events.html" data-translate="browseAll">استعراض الكل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" data-translate="about">عن الدليل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-translate="contact">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <!-- Theme Toggle Only -->
+                            <div class="d-flex align-items-center">
+                                <div class="form-check form-switch me-3" onclick="event.stopPropagation()">
+                                    <input class="form-check-input" type="checkbox" id="themeToggle" role="switch">
+                                    <label class="form-check-label text-white" for="themeToggle" id="themeLabel">
+                                        <i class="fas fa-moon"></i>
+                                    </label>
+                                </div>
+                                <!-- Language Selector -->
+                                <div class="dropdown" onclick="event.stopPropagation()">
+                                    <button class="btn btn-outline-warning btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span id="currentLang">AR</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li><a class="dropdown-item" href="#" data-lang="ar">العربية (AR)</a></li>
+                                        <li><a class="dropdown-item" href="#" data-lang="en">English (EN)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary border-bottom border-warning pb-2" data-translate="allEventsTitle">كل فعاليات رأس البسيط</h1>
+
+        <div class="row mb-4">
+            <div class="col-md-9">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="ابحث عن فعاليات، مهرجانات، أو مواقع..." aria-label="البحث عن فعاليات" data-translate="searchPlaceholder">
+                    <button class="btn btn-warning text-dark" type="button"><i class="fas fa-search"></i> <span data-translate="searchButton">بحث</span></button>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3 mt-md-0">
+                <select class="form-select bg-light">
+                    <option selected data-translate="sortBy">ترتيب حسب التاريخ</option>
+                    <option value="1" data-translate="sortOption1">الأقرب قريباً</option>
+                    <option value="2" data-translate="sortOption2">الأقدم أولاً</option>
+                    <option value="3" data-translate="sortOption3">الأكثر شعبية</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-primary">
+                    <img src="img/event5.jpg" class="card-img-top" alt="مسابقة الصيد" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2"><i class="fas fa-water me-1"></i> <span data-translate="marineBadge">بحري</span></span>
+                        <h5 class="card-title fw-bold text-primary" data-translate="fishingCompetition">مسابقة الصيد الكبرى</h5>
+                        <p class="card-text small text-muted" data-translate="fishingDescription">منافسة ودية لمحبي الصيد، مع جوائز قيمة وعشاء بحري تقليدي.</p>
+                        <ul class="list-unstyled small mt-2">
+                            <li><i class="fas fa-map-marker-alt me-2 text-warning"></i> <strong data-translate="location">الموقع:</strong> شاطئ رأس البسيط الغربي</li>
+                            <li><i class="fas fa-calendar-alt me-2 text-warning"></i> <strong data-translate="date">التاريخ:</strong> 15-17 نوفمبر</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <a href="event.html?id=1" class="btn btn-sm btn-primary float-end" data-translate="detailsAndBooking">التفاصيل وحجز المقاعد</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-warning">
+                    <img src="img/event2.webp" class="card-img-top" alt="مهرجان الصيف" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2"><i class="fas fa-sun me-1"></i> <span data-translate="summerBadge">صيفي</span></span>
+                        <h5 class="card-title fw-bold text-warning" data-translate="musicFestival">مهرجان رأس البسيط الصيفي للموسيقى</h5>
+                        <p class="card-text small text-muted" data-translate="musicDescription">حفلات غنائية مباشرة على الشاطئ، تشمل فنانين محليين وعروض ضوئية.</p>
+                        <ul class="list-unstyled small mt-2">
+                            <li><i class="fas fa-map-marker-alt me-2 text-warning"></i> <strong data-translate="location">الموقع:</strong> المنتجع السياحي</li>
+                            <li><i class="fas fa-calendar-alt me-2 text-warning"></i> <strong data-translate="date">التاريخ:</strong> 1-5 نوفمبر</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <a href="event.html?id=2" class="btn btn-sm btn-warning text-dark float-end" data-translate="detailsAndBooking">التفاصيل وحجز المقاعد</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="img/event9.jpg" class="card-img-top" alt="التخييم" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2"><i class="fas fa-hiking me-1"></i> <span data-translate="environmentalBadge">بيئي</span></span>
+                        <h5 class="card-title fw-bold text-success" data-translate="campingAdventure">مغامرة التخييم في التلال الساحلية</h5>
+                        <p class="card-text small text-muted" data-translate="campingDescription">رحلة تخييم منظمة لاستكشاف جمال الطبيعة المحيطة برأس البسيط.</p>
+                        <ul class="list-unstyled small mt-2">
+                            <li><i class="fas fa-map-marker-alt me-2 text-warning"></i> <strong data-translate="location">الموقع:</strong> تلال البسيط الشمالية</li>
+                            <li><i class="fas fa-calendar-alt me-2 text-warning"></i> <strong data-translate="date">التاريخ:</strong> 20 نوفمبر</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <a href="event.html?id=3" class="btn btn-sm btn-success float-end" data-translate="detailsAndBooking">التفاصيل وحجز المقاعد</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-lg border-danger text-center bg-light-subtle d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                        <i class="fas fa-bullhorn fa-3x text-danger mb-3"></i>
+                        <h5 class="card-title fw-bold text-primary" data-translate="haveEvent">هل لديك فعالية؟</h5>
+                        <p class="card-text small text-muted" data-translate="eventPrompt">قدم فعاليتك الآن لتصل إلى آلاف المهتمين في المنطقة الساحلية.</p>
+                        <a href="contact.html" class="btn btn-danger mt-2" data-translate="submitEvent">قدم فعاليتك الآن</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="mt-5" aria-label="ترقيم الصفحات">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true" data-translate="paginationPrevious">السابق</a>
+                </li>
+                <li class="page-item active" aria-current="page"><a class="page-link bg-primary border-primary" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" data-translate="paginationNext">التالي</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="footerTitle">فعاليات رأس البسيط</h5>
+                    <p class="small" data-translate="footerDesc">بوابة لاستكشاف أجمل الفعاليات على الساحل السوري.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="quickLinks">روابط سريعة</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-white-50" data-translate="home">الرئيسية</a></li>
+                        <li><a href="events.html" class="text-white-50" data-translate="browseAll">استعراض الكل</a></li>
+                        <li><a href="about.html" class="text-white-50" data-translate="about">عن الدليل</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="contactUs">تواصل معنا</h5>
+                    <p class="small"><span data-translate="email">البريد الإلكتروني:</span> info@ras-elbaset-events.com</p>
+                    <div class="social-links-custom">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-warning">
+            <div class="text-center small">
+                <p class="mb-0" data-translate="rights">© 2026 دليل فعاليات رأس البسيط. جميع الحقوق محفوظة.</p>
+                <p class="small mt-3">
+                    <span data-translate="project">مشروع مقرر BWP401</span> | 
+                    <span data-translate="team">فريق العمل:</span> [suhilah_269042 , fatima_220601 , einas_280417 , haya_265732 ,hadeel_221635]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

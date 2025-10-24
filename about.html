@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="aboutPageTitle">عن الدليل - فعاليات رأس البسيط</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-bold" href="index.html">
+                    <i class="fas fa-ship me-2"></i> <span data-translate="footerTitle">فعاليات رأس البسيط</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-translate="home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html" data-translate="browseAll">استعراض الكل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-sm btn-outline-warning text-dark fw-bold" aria-current="page" href="about.html" data-translate="about">عن الدليل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" data-translate="contact">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <!-- Theme Toggle Only -->
+                            <div class="d-flex align-items-center">
+                                <div class="form-check form-switch me-3" onclick="event.stopPropagation()">
+                                    <input class="form-check-input" type="checkbox" id="themeToggle" role="switch">
+                                    <label class="form-check-label text-white" for="themeToggle" id="themeLabel">
+                                        <i class="fas fa-moon"></i>
+                                    </label>
+                                </div>
+                                <!-- Language Selector -->
+                                <div class="dropdown" onclick="event.stopPropagation()">
+                                    <button class="btn btn-outline-warning btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span id="currentLang">AR</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li><a class="dropdown-item" href="#" data-lang="ar">العربية (AR)</a></li>
+                                        <li><a class="dropdown-item" href="#" data-lang="en">English (EN)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 display-4 fw-bold text-primary border-bottom border-warning pb-2" data-translate="aboutMainTitle">تعرف على دليل فعاليات رأس البسيط</h1>
+
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h3 class="text-warning" data-translate="vision">رؤيتنا ورسالتنا</h3>
+                <p class="lead" data-translate="visionText">نسعى لترسيخ مكانة رأس البسيط كوجهة سياحية بحرية وبيئية رائدة. دليلنا هو المنصة الرئيسية لجميع الأنشطة المائية، الرياضات الشاطئية، والفعاليات الثقافية في المنطقة.</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-warning" data-translate="goal">هدفنا</h3>
+                <p data-translate="goalText">تسهيل وصول المصطافين والمهتمين إلى جدول فعاليات متكامل يغطي جميع جوانب الترفيه، السياحة البيئية، والأنشطة البحرية، مما يعزز جمال هذه البقعة الساحلية.</p>
+            </div>
+        </section>
+
+        <section class="my-5 pt-4 border-top border-warning">
+            <h2 class="text-center mb-4 pb-2 border-bottom border-warning" data-translate="team">فريق العمل</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+                
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <img src="img/y.png" class="rounded-circle mb-3 border border-warning border-3" style="width: 100px; height: 100px; object-fit: cover;" alt="صورة قائد الفريق">
+                            <h5 class="fw-bold">سهيلة</h5>
+                            <p class="text-muted small mb-0" data-translate="teamLead">قائدة الفريق والمشروع</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <img src="img/y.png" class="rounded-circle mb-3 border border-warning border-3" style="width: 100px; height: 100px; object-fit: cover;" alt="صورة المطور">
+                            <h5 class="fw-bold"> هيا </h5>
+                            <p class="text-muted small mb-0" data-translate="frontend">مطورة الواجهة الأمامية (Front-end)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <img src="img/y.png" class="rounded-circle mb-3 border border-warning border-3" style="width: 100px; height: 100px; object-fit: cover;" alt="صورة المصمم">
+                            <h5 class="fw-bold">  هديل</h5>
+                            <p class="text-muted small mb-0" data-translate="designer">مصممة UX/UI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <img src="img/y.png" class="rounded-circle mb-3 border border-warning border-3" style="width: 100px; height: 100px; object-fit: cover;" alt="صورة المصمم">
+                            <h5 class="fw-bold"> فاطمة</h5>
+                            <p class="text-muted small mb-0" data-translate="quality">مشرفة الجودة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <img src="img/y.png" class="rounded-circle mb-3 border border-warning border-3" style="width: 100px; height: 100px; object-fit: cover;" alt="صورة المصمم">
+                            <h5 class="fw-bold"> ايناس</h5>
+                            <p class="text-muted small mb-0" data-translate="content">تدقيق المحتوى</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="my-5 pt-4 border-top border-warning">
+            <h2 class="text-center mb-4 pb-2 border-bottom border-warning" data-translate="policies">سياسات الدليل</h2>
+            <div class="accordion" id="policiesAccordion">
+                
+                <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-light-subtle text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-hand-holding-box me-2 text-warning"></i> <span data-translate="policy1Title">سياسة تقديم فعالية جديدة</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#policiesAccordion">
+                        <div class="accordion-body" data-translate="policy1Text">
+                            يجب تقديم طلب إضافة الفعالية قبل شهر واحد على الأقل من تاريخ إقامتها. يتم مراجعة الطلب والموافقة عليه خلال 7 أيام عمل.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-light-subtle text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-file-check me-2 text-warning"></i> <span data-translate="policy2Title">معايير النشر المختصرة</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#policiesAccordion">
+                        <div class="accordion-body" data-translate="policy2Text">
+                            يجب أن تكون الفعالية ذات صلة مباشرة بطابع رأس البسيط (الأنشطة البحرية، التخييم، الرياضات الشاطئية، أو التراث الساحلي).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="footerTitle">فعاليات رأس البسيط</h5>
+                    <p class="small" data-translate="footerDesc">بوابة لاستكشاف أجمل الفعاليات على الساحل السوري.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="quickLinks">روابط سريعة</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-white-50" data-translate="home">الرئيسية</a></li>
+                        <li><a href="events.html" class="text-white-50" data-translate="browseAll">استعراض الكل</a></li>
+                        <li><a href="about.html" class="text-white-50" data-translate="about">عن الدليل</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning" data-translate="contactUs">تواصل معنا</h5>
+                    <p class="small"><span data-translate="email">البريد الإلكتروني:</span> info@ras-elbaset-events.com</p>
+                    <div class="social-links-custom">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-warning">
+            <div class="text-center small">
+                <p class="mb-0" data-translate="rights">© 2026 دليل فعاليات رأس البسيط. جميع الحقوق محفوظة.</p>
+                <p class="small mt-3">
+                    <span data-translate="project">مشروع مقرر BWP401</span> | 
+                    <span data-translate="team">فريق العمل:</span> [suhilah_269042 , fatima_220601 , einas_280417 , haya_265732 ,hadeel_221635]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
